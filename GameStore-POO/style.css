@@ -1,0 +1,179 @@
+body {
+    background-color: #0e0919;
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+header {
+    background-color: #290E61;
+    padding: 5px;
+    margin: -8px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+header > h1 {
+    font-size: xxx-large;
+    letter-spacing: 3px;
+    margin: 0;
+    text-shadow: 0px 0px 20px #5E1FDB;
+}
+
+header > img {
+    display: block;
+    width: 80px;
+    margin: 10px ;
+}
+
+nav {
+    background-color: #12062b;
+    padding: 10px;
+    margin: -8px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav > a {
+    align-self: center;
+    color: white;
+}
+
+.categoria {
+    color: white !important;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+
+section > .tarjeta {
+    display: block;
+    position: relative;
+
+    width: 1000px;
+    min-width: 1000px;
+    margin: 20px auto;
+}
+
+.details, .info {
+    color: white;
+    position: absolute;
+    text-shadow: 3px 3px 3px black;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+
+.tarjeta > .details  {
+    top: 80px;
+    right: 90px;
+    font-size: x-large;
+    line-height: 0px;
+    padding: 10px 60px;
+    background-color: rgba(57, 35, 102, 0.8);
+    border: 1px solid #160733;
+    border-radius: 5px;
+}
+
+.info {
+    left: 80px;
+    bottom: 30px;
+}
+
+.info > .titulo {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 0px;
+}
+
+.info > .genre {
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #443563;
+    padding: 10px;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+.titulo:hover {
+    color: #443563;
+    transition: 0.3s ease;
+    text-decoration: underline;
+}
+
+
+.top-separador-games {
+    width: 1010px;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    border-top: 1px solid #443563;
+}
+
+.tarjeta:hover img,
+.tarjeta:hover .stock,
+.tarjeta:hover .sinStock {
+    transition: 0.3s ease;
+    filter: blur(5px);
+}
+
+.tarjeta:hover .info,
+.tarjeta:hover .details {
+    opacity: 1;
+}
+
+img {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 20%, 100% 100%, 10% 100%, 0% 80%);
+
+}
+
+.stock , .sinStock{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background-color: #160733;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px ;
+    
+}
+
+.sinStock {
+    background-color: red;
+}
+
+.precios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.precioOg {
+    text-decoration: line-through;
+    color: gray;
+}
+
+footer {
+    text-align: center;
+}

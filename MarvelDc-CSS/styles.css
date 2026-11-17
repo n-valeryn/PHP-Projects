@@ -1,0 +1,138 @@
+body {
+    
+    background-color: #0D0D13;
+    color: white !important;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    margin: 0px;
+    grid-gap:25px ;
+
+}
+
+section > .item {
+    background-color: #110F2B;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+
+    border-radius: 25px;
+    border: 2px solid #6366F1 ;
+    box-shadow: #6366F1 2px 2px 7px;
+}
+
+/*section > .item.no-disp2 {
+    background-color: rgba(232, 232, 232, .8);
+}*/
+
+/*section > .item:has(.no-disp) {
+    background-color: rgba(58, 58, 84, 0.8);
+}*/
+
+.item > img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.datos > h3 {
+    background-color: #6366F1;
+    color: #161622;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.datos > .no-disp {
+    border: #6366F1 solid 1px;
+    border-radius: 5px;
+    color: #6366F1;
+    width: fit-content;
+    padding: 10px;
+}
+
+.no-disp2 > img{
+    filter: grayscale(95%);
+}
+
+section > .item:hover {
+    background-color: rgb(28, 28, 41);
+    box-shadow: 0px 0px 5px 4px #6366F1 ;
+}
+
+.datos > .vista {
+    color: #6366F1;
+    background-color: #312E81;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: fit-content;
+    font-weight: 200;
+}
+
+.seccion {
+    font-weight: 900;
+    font-size: xxx-large;
+    letter-spacing: 4px;
+    margin-bottom: -2px;
+    margin-top: 80px;
+    text-decoration: overline;
+    text-shadow: #6366F1 2px 2px 5px;
+    text-align: center;
+}
+
+.anyadir-peli {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+}
+
+form {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0D0D13;
+
+    padding: 25px;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #312E81, #1c1946) 1;
+}
+
+.campo {
+    color: white;
+    background-color: #1c1946;
+    border-radius: 25px;
+
+    padding: 10px 25px 0px;
+    line-height: 10px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+input {
+    color: white;
+    background-color: rgba(255, 255, 255, .1);
+    border: 0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    accent-color: #6366F1;
+    font-size: 15px;
+}
+
+select, ::file-selector-button {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+button[type=submit] {
+    color: white;
+    background: linear-gradient(to  right, #312E81, #110F2B) ;
+    border-radius: 25px;
+    border: 5px double white;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: bold;
+}
